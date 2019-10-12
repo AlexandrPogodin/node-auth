@@ -17,7 +17,7 @@ const configDB = require('./config/database.js');
 // configuration ===============================================================
 mongoose.connect(configDB.url, {
   useUnifiedTopology: true,
-  useNewUrlParser: true
+  useNewUrlParser: true,
 }); // connect to our database
 
 require('./config/passport')(passport); // pass passport for configuration
